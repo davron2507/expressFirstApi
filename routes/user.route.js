@@ -1,0 +1,9 @@
+import { Router } from "express";
+import { registerController } from "../controllers/user.controller.js";
+
+
+let router = new Router()
+
+router.post('/register', registerController)
+
+export default router
